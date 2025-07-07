@@ -1,0 +1,101 @@
+:root
+{
+    --theme-orange: #ee3f2c;
+    --theme-black: #080707;
+    --theme-white: #ebebeb;
+}
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+body
+{
+    background-image: url(../assets/images/hero-bg-image);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.container
+{
+    max-width: 1320px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+a
+{
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+}
+img
+{
+    display: block;
+    width: 100%;
+}
+ul
+{
+    list-style: none;
+}
+/* Navigation Starts */
+.header .navigation
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.header .navigation .logo h3
+{
+    font-size: 36px;
+    font-weight: 900;
+    color: var(--theme-white);
+}
+.header .navigation .logo h3 span
+{
+    font-size: 36px;
+    font-weight: 900;
+    color: var(--theme-orange);
+}
+.header .navigation ul 
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+.header .navigation ul li
+{
+    font-size: 16px;
+    font-weight: 900;
+    margin: 10px 0;
+    padding: 10px 18px;
+    color: var(--theme-white);
+}
+.header .navigation ul li::after
+{
+    content: '+';
+    color: var(--theme-white);
+    margin-left: 8px;
+}
+.header .navigation .btn 
+{
+    padding: 14px 25px 15px;
+    background-color: var(--theme-orange);
+    border-radius: 30px;
+    transition: all .2s ease;
+    color: var(--theme-white);
+    display: flex;
+    align-items: center;
+}
+.header .navigation .btn span
+{
+    font-size: 16px;
+    margin-left: 8px;
+}
+.header .navigation .btn:hover
+{
+    box-shadow: 0 0 8px 3px var(--theme-orange);
+}
+/* Navigation End */
